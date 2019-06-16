@@ -1,7 +1,7 @@
 const active_class = "active";
 const next_class = "next";
 const inactive_class = "inactive";
-const fadeout_duration = 3000;
+const fadeout_duration = 100;
 const update_image_interval = 5000;
 
 function initialize_images($all_images) {
@@ -54,7 +54,7 @@ function update_classes ($image_set, active_image_index) {
 }
 
 function animate_images() {
-    var $image_set = $("div.splash_background:first").children();
+    var $image_set = $("div#splash_background:first").children();
     initialize_images($image_set);
     var active_image_index = 0;
     window.setInterval(function() {
