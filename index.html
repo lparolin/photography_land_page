@@ -10,10 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/animate_background.js"></script>
+    <link rel="stylesheet" href="css/masonry.css">
 
     <!--
 
-    <link rel="stylesheet" href="css/masonry.css">
 
 
     <script src="js/animate_text.js"></script>
@@ -24,7 +24,8 @@
 
 
 <div class="container-fluid">
-    <div id="splash_background" class="row">
+    <div class="row">
+        <div class="column" id="splash_background">
         <div class="fill active position-fixed">
             <img src="splash/splash_1_480_px.webp" alt="splash image" srcset="splash/splash_1_480_px.webp 480w,
                 splash/splash_1_800_px.webp 800w,
@@ -49,7 +50,8 @@
                 splash/splash_3_2000_px.webp 2000w" />
         </div>
     </div>
-    <div class="fill row position-fixed" id="overlay"></div>
+</div>
+    <div class="fill row position-relative" id="overlay"></div>
 </div>
                 <!--
 
@@ -65,22 +67,23 @@
 
     </div>
 </div>
-<div class="container-fluid position-relative sticky-top bg-white">
-    <div class="row cover_screen  justify-content-center">
+-->
+<div class="container-fluid">
+    <div class=" sticky-top fill bg-white row cover_screen  justify-content-center">
         <div class="column w-75">
             <div class="text-width py-5"></div>
             <hr class="elegant" />
-            <div class="masonry" , id="portfolio_content">
-                <div class="item darken">
+            <div class="masonry", id="portfolio_content">
+                <div class="item">
                     <a href="picture.php?/145/category/sunset">
                         <img src="masonry_images/splash_3_480_px.webp" alt="splash image" srcset="splash/splash_3_480_px.webp 480w,
                             masonry_images/20180812004122-a9a5cecd-sm_100_px.webp 100w,
                             masonry_images/20180812004122-a9a5cecd-sm_200_px.webp 200w,
-                            masonry_images/20180812004122-a9a5cecd-sm_400_px.webp 400w,
-                            masonry_images/20180812004122-a9a5cecd-sm_600_px.webp 600w" />
+                            masonry_images/20180812004122-a9a5cecd-sm_400_px.webp 400w"
+                            sizes="300px"/>
                     </a>
 
-                    [photo id=145 album=8 size=S html=true link=true]</div>
+                </div>
                 <div class="item darken">[photo id=173 album=19 size=S html=true link=true]</div>
                 <div class="item darken">[photo id=132 album=13 size=S html=true link=true]</div>
                 <div class="item darken">[photo id=165 album=18 size=S html=true link=true]</div>
@@ -93,7 +96,7 @@
         </div>
     </div>
 </div>
--->
+
 </body>
 
 </html>

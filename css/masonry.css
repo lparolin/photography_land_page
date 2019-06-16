@@ -7,3 +7,15 @@ div.masonry {
   grid-auto-rows: minmax(150px, 200px);
   grid-auto-flow: dense;
 }
+
+div.masonry .item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  overflow: hidden;
+}
+
+div.masonry img {
+    width: 100%;
+}

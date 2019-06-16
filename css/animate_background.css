@@ -1,4 +1,6 @@
 
+
+
 div.active {
     z-index: -2;
 }
@@ -24,7 +26,7 @@ div.fill {
     min-height: 100vh;
 }
 
-div.fill img{
+div.fill > img{
     flex-shrink: 0;
     min-width: 100vw;
     min-height: 100vh;
