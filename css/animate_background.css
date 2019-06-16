@@ -1,13 +1,13 @@
 
-img.active {
+div.active {
     z-index: -2;
 }
 
-img.next {
+div.next  {
     z-index: -3;
 }
 
-img.inactive {
+div.inactive {
     z-index: -100;
 }
 
@@ -19,7 +19,9 @@ div.fill {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 div.fill img{
@@ -27,6 +29,11 @@ div.fill img{
     min-width: 100vw;
     min-height: 100vh;
     position: relative;
+}
+
+div#overlay {
+    z-index: 1;
+    background: rgba(30, 30, 30, 0.5)
 }
 
 hr.elegant {
