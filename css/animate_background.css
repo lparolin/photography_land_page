@@ -23,6 +23,12 @@ div.fill {
     min-height: 100vh;
 }
 
+div#splash_background {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 div.fill > img{
     flex-shrink: 0;
     min-width: 100vw;

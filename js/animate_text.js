@@ -23,8 +23,8 @@ function make_text_appear(initial_delay_ms=1000, animation_duration_ms=80) {
 }
 
 function make_text_appear_from_below(initial_delay_ms=1000, animation_duration_ms=2000) {
-    const initial_margin = "70vh 0 0 0"; // top, right, bottom, left
-    const final_margin = "60vh 0 0 0";
+    const initial_margin = "10vh 0 0 0"; // top, right, bottom, left
+    const final_margin = "20vh 0 0 0";
     var $text_to_animate = $('h1.animate_appear');
     $text_to_animate.css("margin", initial_margin);
     $text_to_animate.delay(initial_delay_ms).animate({
